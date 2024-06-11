@@ -4,6 +4,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.baseclass.BaseClass;
+import com.pomclass.LoginPagePOM;
 
 public class LoginPageTest extends BaseClass{
  
@@ -26,4 +27,26 @@ public class LoginPageTest extends BaseClass{
 		  System.out.println("We are on correct page...Test Pass");
 	  }
   }
+@Test
+public void loginTest() {
+	LoginPagePOM loginpagepom = new LoginPagePOM();
+	loginpagepom.login(loginpagepom.getUsername(),loginpagepom.getPassword());
 }
+@Test
+public void unvalidLoginTest() {
+	LoginPagePOM loginPagePom = new LoginPagePOM();
+	loginPagePom.unvalidLogin(loginPagePom.getUnvalidUsername(),loginPagePom.getUnvalidPassword());
+	
+   String errorMessage = "Invalid credentials";
+	
+if(loginPagePom.getErrorMessage().equals(errorMessage)) {
+	
+	System.out.println("Test Case Pass");
+	
+}else{
+	System.out.println("Test Case Fail");
+  }
+ }
+}
+
+

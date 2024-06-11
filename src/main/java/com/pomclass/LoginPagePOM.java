@@ -19,19 +19,53 @@ public class LoginPagePOM extends BaseClass {
 	@FindBy(xpath="//p[text()='Username : Admin']")
      private WebElement usernameText;
 	
-	@FindBy(xpath="//div/p[text()='Password : admin123']")
+	@FindBy(xpath="//p[text()='Password : admin123']")
      private WebElement passwordText;
 	
 	@FindBy(xpath="//div/input[@name='username']")
-	 private WebElement usernameInputText;
+	 private WebElement usernameInput;
 	
 	@FindBy(xpath="//div/input[@name='password']")
-	 private WebElement passwordInputText;
+	 private WebElement passwordInput;
 	
 	@FindBy(xpath="//button[@type='submit']")
 	 private WebElement submitButton;
 	
 	@FindBy(xpath="//div[@class='orangehrm-login-forgot']//child::p")
-	 private WebElement forgotpasswordLink;
+	 private WebElement forgotpassword;
 	
+	@FindBy(xpath="//p[text()='Invalid credentials']")
+	 private WebElement errorMessage;
+	
+	public String getUsername() {
+	String username = usernameText.getText();
+	 return username.split(":")[1].trim();
+	 }
+	public String getPassword() {
+		String password =passwordText.getText();
+		 return password.split(":")[1].trim();
+	}
+	public void login(String username,String password) {
+		usernameInput.sendKeys(username);
+		passwordInput.sendKeys(password);
+		submitButton.click();
+	}
+	public String getUnvalidUsername() {
+		String username = usernameText.getText();
+		 return username.split(":")[0].trim();
+	}
+	public String getUnvalidPassword() {
+		String password =passwordText.getText();
+		 return password.split(":")[0].trim();
+	}
+	public void unvalidLogin(String username,String password) {
+		usernameInput.sendKeys(username);
+		passwordInput.sendKeys(password);
+		submitButton.click();
+	
+	}
+	public String getErrorMessage() {
+	  return errorMessage.getText();
+	}
 }
+
