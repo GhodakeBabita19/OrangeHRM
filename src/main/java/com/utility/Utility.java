@@ -15,6 +15,7 @@ public class Utility extends BaseClass {
 		ele.sendKeys(text);
 		
 	}
+	
 	public static void  webelementClick(WebElement ele) {
 		ele.click();
 	}
