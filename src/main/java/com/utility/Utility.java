@@ -18,5 +18,6 @@ public class Utility extends BaseClass {
 	public static void  webelementClick(WebElement ele) {
 		ele.click();
 	}
+	 
 	
 }
