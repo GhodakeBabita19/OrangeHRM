@@ -10,8 +10,7 @@ public class Utility extends BaseClass {
 
 		return ele.getText();
 	}
-
-	public static void setText(WebElement ele, String text) {
+    public static void setText(WebElement ele, String text) {
 		ele.sendKeys(text);
 
 	}
