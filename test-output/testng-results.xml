@@ -2,19 +2,19 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-01T14:51:21 IST" name="Default suite" finished-at="2024-06-01T14:51:32 IST" duration-ms="11049">
+  <suite started-at="2024-06-13T16:34:55 IST" name="Default suite" finished-at="2024-06-13T16:35:33 IST" duration-ms="38193">
     <groups>
     </groups>
-    <test started-at="2024-06-01T14:51:21 IST" name="Default test" finished-at="2024-06-01T14:51:32 IST" duration-ms="11049">
+    <test started-at="2024-06-13T16:34:55 IST" name="Default test" finished-at="2024-06-13T16:35:33 IST" duration-ms="38193">
       <class name="com.tests.LoginPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.tests.LoginPageTest@229f66ed]" started-at="2024-06-01T14:51:21 IST" name="setup" finished-at="2024-06-01T14:51:21 IST" duration-ms="28" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tests.LoginPageTest@4116aac9]" started-at="2024-06-13T16:34:55 IST" name="setup" finished-at="2024-06-13T16:34:55 IST" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="pageUrl()[pri:0, instance:com.tests.LoginPageTest@229f66ed]" started-at="2024-06-01T14:51:21 IST" name="pageUrl" finished-at="2024-06-01T14:51:32 IST" duration-ms="10971" status="PASS">
+        <test-method signature="forgotPasswordTest()[pri:0, instance:com.tests.LoginPageTest@4116aac9]" started-at="2024-06-13T16:34:55 IST" name="forgotPasswordTest" finished-at="2024-06-13T16:35:33 IST" duration-ms="38133" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- pageUrl -->
+        </test-method> <!-- forgotPasswordTest -->
       </class> <!-- com.tests.LoginPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
