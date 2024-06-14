@@ -58,6 +58,7 @@ public class LoginPageTest extends BaseClass {
 		
 		SoftAssert assertion = new SoftAssert();
 		assertion.assertFalse(false, loginPagePom.getPassword());
+		
         loginPagePom.forgotPassword(loginPagePom.getUsername(), loginPagePom.getPassword());
 
 	}

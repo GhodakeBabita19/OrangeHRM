@@ -87,8 +87,7 @@ public class LoginPagePOM extends BaseClass {
 		return errorMessage.getText();
 		
 	}
-
-	public String forgotPassword(String username, String password) {
+     public String forgotPassword(String username, String password) {
 		Utility.webelementClick(forgotpassword);
 		Utility.setText(resetPasswordusernameInput, username);
 		Utility.webelementClick(resetPasswordsubmitButton);
