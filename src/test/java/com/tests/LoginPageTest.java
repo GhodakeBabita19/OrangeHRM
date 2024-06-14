@@ -1,6 +1,6 @@
 package com.tests;
 
-import org.junit.AfterClass;
+
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -17,7 +17,7 @@ public class LoginPageTest extends BaseClass {
 
 	}
 
-	@AfterClass
+	
 	public void teardown() {
 		driver.close();
 	}
